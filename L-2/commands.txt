@@ -1,0 +1,6 @@
+yarn create react-app l2 --template typescript
+
+cd l2
+
+yarn start
+
