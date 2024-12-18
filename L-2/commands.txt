@@ -4,3 +4,14 @@ cd l2
 
 yarn start
 
+yarn add dayjs
+
+yarn add react-calendar
+
+<Calendar /> in App.tsx
+
+yarn start
+
+screenshot
+
+done!
