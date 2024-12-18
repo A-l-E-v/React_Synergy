@@ -1,0 +1,13 @@
+yarn create react-app l3 --template typescript
+
+cd l3
+
+corepack enable
+
+yarn set version stable
+
+yarn install
+
+yarn -v
+
+yarn start
