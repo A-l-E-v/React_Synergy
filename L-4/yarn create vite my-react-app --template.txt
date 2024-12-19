@@ -1,0 +1,44 @@
+yarn create vite l4 --template react-ts
+cd l4
+----
+corepack enable
+yarn set version stable
+yarn install
+----
+yarn install
+yarn add bootstrap
+
+src/main.tsx: import 'bootstrap/dist/css/bootstrap.min.css';
+
+yarn dev
+
+
+
+
+
+# yarn add --dev jest @types/jest ts-jest
+
+# /jest.config.ts:
+# _________
+# import type { Config } from 'jest';
+
+# const config: Config = {
+#   preset: 'ts-jest',
+#   testEnvironment: 'jsdom',
+#   moduleNameMapper: {
+#     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+#   },
+# };
+
+# export default config;
+# _________
+
+# package.json:
+
+# "scripts": {
+#   .... ,
+#   "test": "jest"
+# }
+# _________
+
+# yarn test
