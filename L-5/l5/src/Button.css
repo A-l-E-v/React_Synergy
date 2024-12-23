@@ -1,0 +1,33 @@
+/* Button.css */
+
+.button {
+    font-weight: bolder;
+    /* Жирный шрифт */
+    color: whitesmoke;
+    /* Белый цвет текста */
+    transition: background-color 0.3s;
+    /* Время перехода цвета фона */
+}
+
+/* цвет заливки кнопки */
+.red {
+    background-color: red;
+    /* Нечётные нажатия - красный фон */
+}
+
+.green {
+    background-color: green;
+    /* Чётные нажатия - зелёный фон */
+}
+
+/* меняем цвет фона при наведении курсора */
+
+.hover-blue:hover {
+    background-color: blue;
+    /* Чётные нажатия - синий фон при hover */
+}
+
+.hover-orange:hover {
+    background-color: orange;
+    /* Нечётные нажатия - оранжевый фон при hover */
+}
