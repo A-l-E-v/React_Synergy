@@ -1,14 +1,13 @@
-import React from 'react';
 
-const ClosePage: React.FC = () => {
+const ClosePage = () => {
     const handleClose = () => {
         window.close();
     };
 
     return (
         <div>
-            <h1>Close Page</h1>
-            <button onClick={handleClose}>Close</button>
+            <h1>Закрыть страницу</h1>
+            <button className="btn btn-danger" onClick={handleClose}>Закроет эту страницу!</button>
         </div>
     );
 };

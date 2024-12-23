@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-const OpenPage: React.FC = () => {
+const OpenPage = () => {
     const [url, setUrl] = useState('');
     const [error, setError] = useState('');
 
@@ -10,21 +10,24 @@ const OpenPage: React.FC = () => {
             window.open(url, '_blank');
             setError('');
         } catch {
-            setError('Invalid URL. Please check and try again.');
+            setError('Ошибка в URL! Повторите ввод.');
         }
     };
 
     return (
         <div>
-            <h1>Open Page</h1>
+            <h1>Открыть страницу</h1>
             <input
                 type="text"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="Enter URL"
+                placeholder="Введите URL http(s)://..."
             />
-            <button onClick={handleOpen}>Open</button>
-            {error && <p style={{ color: 'red' }}>{error}</p>}
+            <button 
+            className="btn btn-success"
+            onClick={handleOpen}>Открыть!
+            </button>
+            {error && <p className="text-danger">{error}</p>}
         </div>
     );
 };

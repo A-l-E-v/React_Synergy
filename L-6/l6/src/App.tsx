@@ -13,19 +13,19 @@ import OpenPage from './components/pages/Open';
 function App() {
 
   return (
-    
+
     <>
-    <Router>
-            <Navbar />
-            <div className="container mt-4">
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/redirect" element={<RedirectPage />} />
-                    <Route path="/close" element={<ClosePage />} />
-                    <Route path="/open" element={<OpenPage />} />
-                </Routes>
-            </div>
-        </Router>
+      <Router>
+        <Navbar />
+        <div className="container mt-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/redirect" element={<RedirectPage />} />
+            <Route path="/close" element={<ClosePage />} />
+            <Route path="/open" element={<OpenPage />} />
+          </Routes>
+        </div>
+      </Router>
       <div>
 
         <a href="https://vite.dev" target="_blank">
@@ -39,15 +39,9 @@ function App() {
       </div>
 
       <h1>Vite + React</h1>
-
-      <div className="card">
-
-        <p>
-          React Router Dom Exercise
-        </p>
-
-      </div>
-
+       
+          Домашнее задание 5
+      
     </>
   )
 }

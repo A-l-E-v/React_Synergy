@@ -6,8 +6,12 @@ const RedirectPage: React.FC = () => {
 
     return (
         <div>
+            <h1>Домой!</h1>
+            <button
+            className="btn btn-primary"
+            onClick={() => navigate('/')}>
+                На главную страницу!</button>
             <h1>Redirect Page</h1>
-            <button onClick={() => navigate('/')}>Redirect to Home</button>
         </div>
     );
 };
