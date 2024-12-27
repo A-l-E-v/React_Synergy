@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-html {
-    -webkit-text-size-adjust: 100%; /* Ошибки в Firefox - не помогает! */
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100;
-}
-
 body {
     line-height: 1.5;
     font-family: sans-serif; /* Установите шрифт по умолчанию */
