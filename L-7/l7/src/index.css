@@ -1,0 +1,40 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%; /* Ошибки в Firefox - не помогает! */
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100;
+}
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif; /* Установите шрифт по умолчанию */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal; /* Устранение стилей заголовков по умолчанию */
+}
+
+ul, ol {
+    list-style: none; /* Устранение маркеров списка */
+}
+
+a {
+    text-decoration: none; /* Устранение подчеркивания ссылок */
+    color: inherit; /* Унаследовать цвет текста */
+}
+
+img {
+    max-width: 100%; /* Адаптивные изображения */
+    height: auto; /* Сохранение пропорций изображений */
+}
+
+table {
+    border-collapse: collapse; /* Устранение пробелов между ячейками таблицы */
+    width: 100%; /* Ширина таблицы по умолчанию */
+}

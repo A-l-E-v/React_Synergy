@@ -1,0 +1,47 @@
+yarn create vite l7 --template react-ts
+cd l7
+----
+corepack enable
+yarn set version stable
+
+cp .yarnrc.yml to / project
+yarn install
+reload VScode window
+
+----
+yarn add bootstrap
+
+check (!) src/main.tsx: import 'bootstrap/dist/css/bootstrap.min.css';
+
+yarn dev
+
+
+____________________________
+yarn add --dev ts-node
+
+yarn add --dev jest @types/jest ts-jest
+
+/jest.config.ts:
+ _________
+import type { Config } from 'jest';
+
+ const config: Config = {
+   preset: 'ts-jest',
+   testEnvironment: 'jsdom',
+   moduleNameMapper: {
+     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
+   },
+ };
+
+ export default config;
+ _________
+
+ package.json:
+
+ "scripts": {
+   .... ,
+   "test": "jest"
+ }
+ _________
+
+ yarn test
