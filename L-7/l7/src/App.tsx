@@ -1,12 +1,10 @@
-// import { useState } from 'react'
-
-import './App.css'
+import './styles/App.scss'
 
 function App() {
 
   return (
     <>
-     
+     <h1>Hi!</h1>
     </>
   )
 }
