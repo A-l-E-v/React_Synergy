@@ -1,0 +1,20 @@
+// yarn add -D sass@~1.64.2
+@use 'normalize.css';
+@use 'bootstrap';
+
+.todo-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px; // Отступ снизу до кнопки
+}
+
+.todo-button {
+  margin-left: 10px; // Отступ между кнопками
+  height: 36px; // Высота кнопок
+  font-size: 16px; // Размер шрифта кнопок
+  align-items: center;
+}
+
+.completed {
+  background-color: #d4edda; // Цвет фона для завершенных задач
+}
