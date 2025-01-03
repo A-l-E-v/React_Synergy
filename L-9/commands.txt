@@ -1,0 +1,13 @@
+yarn create vite l9 --template react-ts
+cd l9
+----
+corepack enable
+yarn set version stable
+
+cp .yarnrc.yml to / project
+yarn install
+reload VScode window
+
+----
+
+yarn dev
