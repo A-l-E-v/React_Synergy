@@ -1,0 +1,17 @@
+cd ....../ReactProject
+yarn create vite rprj --template react-ts
+cd rprj
+corepack enable
+yarn set version stable
+
+
+yarn install
+------
+
+yarn add react-bootstrap bootstrap sass@~1.64.2 
+
+App.scss: @use 'bootstrap/scss/bootstrap';
+App.tsx: import './App.scss';
+
+yarn dev
+
