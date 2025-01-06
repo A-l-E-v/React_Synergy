@@ -1,0 +1,24 @@
+@import 'bootstrap/scss/bootstrap';
+
+.form-control {
+    margin-right: 5px; // Отступ между control и label
+    border-radius: 5px;
+    border-color: blue;
+}
+
+.currency-selector-group {
+    display: flex;
+    align-items: center;
+
+    .form-label {
+        margin-left: 5px; // Отступ между элементом и label
+        margin-bottom: 0px;
+        font-size: x-large;
+    }
+
+    .form-control {
+        margin-left: 5px; // Отступ между control и label
+        border-radius: 5px;
+        border-color: blue;
+    }
+}
