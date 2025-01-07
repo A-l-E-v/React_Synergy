@@ -1,0 +1,55 @@
+.navbar {
+    background-color: rgba(255, 255, 255, 0.9); // Прозрачный белый фон
+    position: fixed; // Зафиксировать навбар
+    top: 0;
+    right: 0; // Привязать к правому краю
+    z-index: 1000;
+    width: auto; // Ширина равна ширине кнопки
+
+    &.open {
+        .navbar-collapse {
+            display: block !important; // Обеспечить отображение меню
+        }
+    }
+
+    .navbar-toggle {
+        cursor: pointer;
+        position: absolute; // Позиционирование кнопки
+        top: 10px; // Отступ сверху
+        right: 10px; // Отступ справа
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+
+        .bar {
+            width: 30px;
+            height: 3px;
+            background-color: #797979; // Цвет полос (чуть ярче для темной темы)
+            margin: 3px 0;
+            transition: all 0.3s ease;
+        }
+    }
+
+    .navbar-collapse {
+        display: none; // Скрыть меню по умолчанию
+        background-color: rgba(92, 90, 90, 0.7); // Прозрачный белый фон
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        top: 50px; // Позиционирование под кнопкой
+        right: 0; // Привязать к правому краю
+        width: auto; // Ширина равна ширине кнопки
+        margin-right: 20px;
+        z-index: 999;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-link {
+        color: white; // Цвет ссылок (чуть ярче для темной темы)
+        &:hover {
+            color: #0c6bb8 // Цвет при наведении
+        }
+    }
+}
